@@ -16,5 +16,5 @@ export const Sidebar = styled.div`
 
 export const Content = styled.div`
   flex: 1;
-  background-color: var(--bs-gray-200);
+  background-color: var(--bs-gray-100);
 `;

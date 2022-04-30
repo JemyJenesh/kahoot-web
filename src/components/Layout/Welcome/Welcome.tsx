@@ -1,13 +1,16 @@
-import { Outlet } from "react-router-dom";
-
+import { ReactNode } from "react";
 import { RoundedCard } from "./components";
 import { Content, Sidebar, Wrapper } from "./index.css";
 
-const iconStyle = {
-  fontSize: 32,
+export type WelcomeProps = {
+  children: ReactNode;
 };
 
-export const Welcome = () => {
+export const Welcome = ({ children }: WelcomeProps) => {
+  const iconStyle = {
+    fontSize: 32,
+  };
+
   return (
     <Wrapper>
       <Sidebar>
@@ -27,9 +30,7 @@ export const Welcome = () => {
           title="Join quiz"
         />
       </Sidebar>
-      <Content>
-        <Outlet />
-      </Content>
+      <Content>{children} </Content>
     </Wrapper>
   );
 };
