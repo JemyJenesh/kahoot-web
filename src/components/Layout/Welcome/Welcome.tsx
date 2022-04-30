@@ -21,7 +21,7 @@ export const Welcome = ({ children }: WelcomeProps) => {
         />
         <RoundedCard
           to="/register"
-          icon={<i className="bi bi-door-open-fill" style={iconStyle}></i>}
+          icon={<i className="bi bi-person-plus-fill" style={iconStyle}></i>}
           title="Register"
         />
         <RoundedCard
